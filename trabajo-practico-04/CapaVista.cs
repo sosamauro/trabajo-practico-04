@@ -10,7 +10,15 @@ namespace Ejercicio01
     {
         public static void Ejecutar()
         {
-            CapaControlador.Ejecutar();
+            try
+            {
+                CapaControlador.Ejecutar();
+            }
+            catch (CapaAplicacionException ex)
+            {
+                Console.WriteLine(ex.Message.ToString());
+                Console.WriteLine(ex.InnerException.Message.ToString());
+            }
         }
     }
 }

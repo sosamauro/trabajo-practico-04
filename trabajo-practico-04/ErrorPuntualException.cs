@@ -8,6 +8,6 @@ namespace Ejercicio01
 {
     class ErrorPuntualException : ApplicationException
     {
-         
+        public ErrorPuntualException(string message) : base ( String.Format("Error puntual el día {0:d} a las {0:t}", DateTime.Now) ) { }
     }
 }

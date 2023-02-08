@@ -10,7 +10,14 @@ namespace Ejercicio01
     {
         public static void Ejecutar()
         {
-            CapaDominio.Ejecutar();
+            try
+            {
+                CapaDominio.Ejecutar();
+            }
+            catch (ErrorPuntualException ex)
+            {
+                throw new CapaAplicacionException("Capa aplicacion exception.", ex);
+            }
         }
     }
 }

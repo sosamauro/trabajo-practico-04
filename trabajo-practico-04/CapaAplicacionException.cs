@@ -8,6 +8,6 @@ namespace Ejercicio01
 {
     class CapaAplicacionException : ApplicationException
     {
-
+        public CapaAplicacionException(string message, Exception inner) : base ( "Excepción encontrada en la capa aplicación.", inner ) { }
     }
 }

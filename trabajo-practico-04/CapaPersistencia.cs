@@ -10,7 +10,7 @@ namespace Ejercicio01
     {
         public static void Ejecutar()
         {
-            Console.WriteLine("Se ejecutó.");
+            throw new ErrorPuntualException ("Error puntual exception.");
         }
     }
 }
