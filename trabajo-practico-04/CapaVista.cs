@@ -18,6 +18,9 @@ namespace Ejercicio01
             {
                 Console.WriteLine(ex.Message.ToString());
                 Console.WriteLine(ex.InnerException.Message.ToString());
+                Console.WriteLine(
+                    "\nStackTrace ---\n{0}", ex.StackTrace);
+
             }
         }
     }
